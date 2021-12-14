@@ -26,4 +26,3 @@ for l, r in pairs:
     k = math.floor(math.log2(r-l+1))
     res += min(st[l][k], st[r - (1 << k) + 1][k])
 
-print(res)

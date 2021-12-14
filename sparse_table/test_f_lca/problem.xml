@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="2" short-name="basic-lca" url="https://polygon.codeforces.com/p6eQHGM/hoangntbk56/basic-lca">
+        
+    <names>
+                
+        <name language="english" value="LCA"/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+                
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+            
+    </statements>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>536870912</memory-limit>
+                        
+            <test-count>3</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test method="manual" points="0.0" sample="true"/>
+                                
+                <test description="File &quot;01&quot;" method="manual" points="50.0"/>
+                                
+                <test description="File &quot;02&quot;" method="manual" points="50.0"/>
+                            
+            </tests>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+            
+    </files>
+        
+    <assets>
+                
+        <checker name="std::ncmp.cpp" type="testlib">
+                        
+            <source path="files/check.cpp" type="cpp.g++17"/>
+                        
+            <binary path="check.exe" type="exe.win32"/>
+                        
+            <copy path="check.cpp"/>
+                        
+            <testset>
+                                
+                <test-count>0</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests/>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <solutions>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/lca.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/lca.exe" type="exe.win32"/>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+    
+</problem>
